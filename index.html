@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+</head>
+<body>
+    <header class="">
+        <nav class="navbar">
+            <div class="logo-academlo">
+                <a href=""><img src="./assets/imagenes/favicon.png" alt=""></a>
+                <a class="texto-academlo" href=""><b>STORE</b></a>
+            </div>
+            <div class="menu-2">
+                <div class="cont-menu active" id="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Product</li>
+                    </ul>
+
+                </div>
+                <img src="./assets/imagenes/sleep-mode.png" alt="" id="dark-mode">
+                
+                <div class="menu-22" id="carrito">
+                    <img src="./assets/imagenes/shop-bag.png"   >
+                    
+                </div>
+                
+                <div class="icono-menu" id="hamburgesa">
+                    <img src="./assets/imagenes/menu.png" class="menu-hamburgesa">
+
+                </div>              
+                
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--CARRITO DE COMPRAS-->
+        <section class="cart" id="cart">
+            <div class="div-cerrar" id="cerrarCart">
+                <img src="./assets/imagenes/close.png" alt="">
+            </div>
+
+            <div class="div-titulo">
+                <h2 class="titulo-cart">
+                    My Cart
+                </h2>
+            </div>
+
+            <div class="cart__container">
+                <div class="cart-empty ">
+                    <img src="./assets/imagenes/empty-cart.png" alt="">
+                    <h2>Your cart is empty</h2>
+                    <p>You can add items to your cart by clicking on the add button on the products page</p>
+                </div>
+
+                <!-- contenido agregado al Carrito -->
+                <div class="contenidoCarrito mostrar" id="agregados">
+                    
+                    <section class="card-carrito " id="card-carrito">
+                        <!--
+                        <img src="" alt="" id="card-carrito__img">
+                        <div>
+                            <h4></h4>
+                            <div class="datos-card">
+                                <span class="datos-card-stock">Stock:</span>
+                                <span class="datos-card-valor">$</span>
+                            </div>
+                            <span class="total-item-card">subtotal:$ </span>
+                            <div class="control-card">
+                                <span>
+                                    <button>
+                                        -
+                                    </button>
+                                </span>
+                                <span>
+                                    units
+                                </span>
+                                <span>
+                                    <button>
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    -->
+                    </section>
+                    
+                    
+                     
+                    <!--
+                    <section class="card-carrito card-fuera">
+                        <img src="./assets/imagenes/featured2.png" alt="">
+                        <div>
+                            <h4>Shirts</h4>
+                            <div class="datos-card">
+                                <span>stock:10</span>
+                                <span>$14.00</span>
+                            </div>
+                            <span class="total-item-card">subtotal: 14.00</span>
+                            <div class="control-card">
+                                <span>
+                                    <button>
+                                        -
+                                    </button>
+                                </span>
+                                <span>
+                                    units
+                                </span>
+                                <span>
+                                    <button>
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card-carrito card-fuera">
+                        <img src="./assets/imagenes/featured3.png" alt="">
+                        <div>
+                            <h4>Sweatshirts</h4>
+                            <div class="datos-card">
+                                <span>stock:10</span>
+                                <span class="total-item-card">$14.00</span>
+                            </div>
+                            <span class="total-item-card">subtotal: 14.00</span>
+                            <div class="control-card">
+                                <span>
+                                    <button>
+                                        -
+                                    </button>
+                                </span>
+                                <span>
+                                    units
+                                </span>
+                                <span>
+                                    <button>
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                -->
+                </div>
+                <div class="cart__prices">
+                    <span class="cart__prices-item">
+                        <span id="items-count">0</span>
+                        "items"
+                    </span>
+                    <span class="cart__prices-total" id="cart-total">$0.00</span>
+                </div>
+                <div class="cart__checkout">
+                    <button class="button cart__btn" id="cart-checkout" disabled="disabled">"Checkout"</button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="principal">
+            <div class="detalles">
+                <h3>New Sweatshirt</h3>
+                <h2>COLLECTIONS 2022</h2>
+                <p>Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design.</p>
+                <h4>$14.00</h4>
+                <div class="botones-principal">
+                    <div>
+                        <button>Discover</button>
+                    </div>
+                    <div>
+                        <button>ADD YO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="presentacion">
+                <div class="fondo-imagen">
+                    <img class="imagen-principal" src="./assets/imagenes/home.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="productos">
+            <div class="productos-contenedor">
+                <ul class="productos-filtros">
+                    <li class="producto-item producto-linea" id="all-products">
+                        <h4>Show All</h4>
+                        <span>Show all products</span>
+                    <li class="producto-item producto-linea" id="hoodies-products">
+                        <h4>Hoodies</h4>
+                        <span>3 products</span>
+                    </li>
+                    <li class="producto-item producto-linea" id="shirts-products">
+                        <h4>Shirts</h4>
+                        <span>4 products</span>
+                    </li>
+                    <li class="producto-item producto-linea" id="sweatshirt-products">
+                        <h4>Sweatshirt</h4>
+                        <span>4 products</span>
+                    </li>
+                </ul>  
+            </div>
+            <div class="estilos-contenedor">
+                <article class="hoodies carta">
+                    <div class="producto-fondo">
+                        <img src="./assets/imagenes/featured1.png" alt="">
+                    </div>
+                    <div class="info-producto">
+                        <h4>$14.00</h4>
+                        <span>| Stock: 10</span>
+                        <p>Hoodies</p>
+                        <button class="boton-productos" id="btn-hoodies"><img src="./assets/imagenes/boton-agregar.png" alt=""></button>
+                    </div>
+                </article>
+                <article class="shirts carta">
+                    <div class="producto-fondo">
+                        <img src="./assets/imagenes/featured2.png" alt="">
+                    </div>
+                    <div class="info-producto">
+                        <h4>$24.00</h4>
+                        <span>| Stock: 15</span>
+                        <p>Shirts</p>
+                        <button class="boton-productos" id="btn-shirts"><img src="./assets/imagenes/boton-agregar.png" alt=""></button>
+                    </div>
+                </article>
+                <article class="sweatshirts carta">
+                    <div class="producto-fondo">
+                        <img src="./assets/imagenes/featured3.png" alt="">
+                    </div>
+                    <div class="info-producto">
+                        <h4>$24.00</h4>
+                        <span>| Stock: 20</span>
+                        <p>Sweatshirts</p>
+                        <button class="boton-productos" id="btn-sweatshirts"><img src="./assets/imagenes/boton-agregar.png" alt=""></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>Our information</h3>
+            <ul class="listas-footer">
+                <li>Toluca-México</li>
+            </ul>
+
+        </section>
+        <section>
+            <h3>About Us</h3>
+            <ul class="listas-footer">
+                <li>Support Center</li>
+                <li>Custommer Support</li>
+                <li>About Us</li>
+                <li>Copy Right</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Product</h3>
+            <ul class="listas-footer">
+                <li>Hoodies</li>
+                <li>Shirts</li>
+                <li>Sweatshirts</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Social</h3>
+            <ul class="listas-footer listas-display">
+                <li><img class="face-tamano" src="./assets/iconos/facebook.png" alt=""></li>
+                <li><img src="./assets/iconos/ant-design_twitter-outlined.svg" alt=""></li>
+                <li><img src="./assets/iconos/ant-design_instagram-filled.svg" alt=""></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

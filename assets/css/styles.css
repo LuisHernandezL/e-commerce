@@ -1,0 +1,828 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------------------NAVBAR----------------------- */
+
+header{
+    background-color: transparent;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 60px;
+   
+    
+}
+
+.logo-academlo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-academlo > a > img{
+    width: 45px;
+    height: 45px;
+}
+
+.logo-academlo > a {
+    margin-left: 1rem;
+}
+
+.texto-academlo{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-2 {
+    display: flex;
+    align-items: center;
+}
+
+#dark-mode{
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+}
+
+.menu-hamburgesa{ /*menu ham*/
+    margin-right: 1rem;
+    width: 17px;
+    height: 17px;
+
+}
+
+.menu-2 > div > img {
+    width: 15px;
+    height: 15px;
+    
+}
+
+
+.menu-22{
+    margin-right: 1rem;
+    position: relative;
+}
+
+.menu-22::after{
+    content: '0';
+    color: white;
+    position: absolute;
+    right: -1px;
+    top: 7px;
+    font-size: 10px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+#hamburgesa{
+    position: relative;
+    z-index: 10;
+}
+
+/*estilos para el contenedor del menu*/
+.cont-menu{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .5s ease;
+}
+/*estilos para agregar en JS*/
+
+.active{
+    transition: all .5s ease;
+    right: 100%;
+}
+
+/*estilos para el listado del menu*/
+.cont-menu ul{
+    padding: 100px 0 20px 0;
+     
+ }
+
+ 
+ 
+ .cont-menu ul li{
+     color: black;
+     display: block;
+     font-size: 25px;
+     text-decoration: none;
+     padding: 10px 50px;
+     cursor: pointer;
+     
+ }
+ 
+ .cont-menu ul li:hover{
+     color: #e74260;
+ 
+ }
+
+
+
+/* ----------------principal------------------------ */
+
+.principal{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.detalles{
+    margin-left: 1.6rem;
+}
+
+.detalles > h3 {
+    font-size: 30px;
+    margin-bottom: .6rem;
+}
+
+.detalles > h2 {
+    font-size: 32px;
+    margin-bottom: .8rem;
+}
+
+.detalles > p {
+    font-size: 16px;
+    width: 360px;
+    margin-bottom: 2rem;
+}
+
+.detalles > h4 {
+    color: #e74260;
+    font-size: 22px;
+}
+
+.botones-principal {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.botones-principal > div:nth-child(1) > button {
+ background-color: rgba(93, 93, 93, 0.37);
+ height: 50px;
+ width: 100px;
+}
+
+.botones-principal > div:nth-child(2) > button {
+    background-color: rgba(0, 0, 0, 0.747);
+    height: 60px;
+    width: 150px;
+    color: white;
+}
+
+
+.presentacion{
+    display: flex;
+    justify-content: end;
+}
+
+.fondo-imagen{
+    background-color: #e74260;
+    width: 260px;
+    height: 400px;
+    position: relative;
+    bottom: 60px;
+    z-index: -1;
+}
+
+.imagen-principal {
+    width: 230px;
+    height: 260px;
+    position: relative;
+    top: 70px;
+    left: 1rem;
+}
+
+/*---------------------CARRITO DE COMPRAS----------------------*/
+
+.cart{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 3.5rem 2rem;
+    transition: .4s;
+    position: fixed;
+    left: 100%;
+    z-index: 10;
+    top: -1px;
+    transition: all .5s ease;
+}
+
+.cart__container {
+    min-height: 550px;
+}
+
+
+.titulo-cart{
+    font-size: 30px;
+}
+
+.div-cerrar{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15px;
+}
+
+.div-cerrar img{
+    height: 20px;
+    width: 20px;
+}
+
+.div-titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-empty img{
+    margin-top: 20px;
+    width: 85%;
+    height: auto;
+}
+
+.cart-empty p{
+    max-width: 75%;
+    margin-top: 20px;
+}
+
+.cart__prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.cart__checkout{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+}
+
+.show-cart {
+    left: 0%;
+}
+
+
+/* -------------------tarjetas carrito----------------- */
+
+.contenidoCarrito {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.card-carrito {
+    gap: 1rem;
+    background: white;
+    display: flex;
+}
+
+.card-carrito img {
+    width: 70px;
+    height: auto;
+    border: solid 1px rgb(226, 226, 226);
+}
+
+.card-carrito > h4 {
+    font-size: 12px;
+}
+
+.datos-card span:nth-child(1) {
+    font-size: 14px;
+    padding-right: .4rem;
+    border-right: 1px solid black;
+}
+
+.datos-card span:nth-child(2) {
+    color: #e74260;
+}
+
+.total-item-card {
+    color: #e74260;
+}
+
+.card-fuera {
+    display: none;
+}
+
+.control-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.control-card > span > button {
+    height: 24px;
+    width: 24px;
+    font-size: 19px;
+    background-color: white;
+    border: 1px solid #e3e3e3;
+}
+
+/* --------------------PRODUCTOS--------------------- */
+
+.productos-contenedor{
+    margin-top: 50px;
+}
+
+.producto-item {
+    cursor: pointer;
+}
+
+
+
+.productos-filtros{
+    position: relative;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-linea::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background-color: black;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.producto-linea {
+    position: relative;
+}
+
+.estilos-contenedor{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.producto-fondo {
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    padding: .25rem 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border: solid 1px #e4e4e4;
+    width: 180px;
+    height: 180px;
+
+}
+
+.producto-fondo > img {
+    width: 150px;
+}
+
+.producto-fondo > img:hover {
+    transform: translate(0,-10px);
+}
+
+.info-producto {
+    border-radius: 0 0 0.5rem 0.5rem;
+    border: solid 1px #e4e4e4;
+    position: relative;
+    width: 180px;
+    height: 70px;
+}
+
+
+.info-producto > h4, .info-producto > span,
+ .info-producto > p {
+     margin-left: .5rem;
+}
+
+.info-producto > h4 {
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+    display: inline-block;
+}
+
+.info-producto > span {
+    font-size: 0.8rem;
+}
+
+.boton-productos{
+    display: inline-flex;
+    position: absolute;
+    right: 1rem;
+    top: -1.25rem;
+    padding: .625rem;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px #575757;
+    cursor: pointer;
+}
+
+.boton-productos > img {
+    width: 15px;
+}
+
+
+
+/* ---------------------Footer------------------------ */
+
+
+footer {
+    margin-top: 80px;
+    background-color: #b1b1b1;
+}
+
+footer > section {
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.listas-footer > li{
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.face-tamano{
+    width: 25px;
+}
+
+.listas-display{
+    cursor: pointer;
+    display:flex;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    /* ------------------NAVBAR----------------------- */
+
+
+.navbar{
+    justify-content: space-around; 
+}
+
+
+
+.menu-2 {
+    width: auto;
+}
+
+.menu-2 div img {
+    width: 19px;
+    height: auto;
+}
+
+#dark-mode{
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+}
+
+.menu-hamburgesa{ /*menu ham*/
+   display: none;
+}
+
+
+.menu-22{
+    margin-right: 1rem;
+    position: relative;
+}
+
+/*estilos para el contenedor del menu*/
+.cont-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 0px;
+    right: 700px;
+}
+
+/*estilos para el listado del menu*/
+.cont-menu ul{
+    padding: 0px;
+    height: auto;
+    width: auto;
+    position: static;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    transition: none;
+    flex-direction: row;
+    gap: 1rem;
+     
+ }
+
+ .cont-menu ul li:nth-child(1) {
+     color: #e74260;
+ }
+ 
+ 
+ .cont-menu ul li{
+     display: inline-block;
+     font-size: 20px;
+     padding: 0px;
+     cursor: pointer;
+     
+ }
+ 
+ .cont-menu ul li:hover{
+     color: #e74260;
+ 
+ }
+
+.header-scroll{
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     transition: .10s;
+     background-color: transparent;
+ }
+
+.nav-scroll{
+    background-color: white;
+    box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+    transition: .10s;
+}
+
+ /* ----------------principal------------------------ */
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detalles{
+    margin-left: 330px;
+}
+
+.detalles > h3 {
+    font-size: 50px;
+    margin-bottom: .6rem;
+}
+
+.detalles > h2 {
+    font-size: 52px;
+    margin-bottom: .8rem;
+}
+
+.detalles > p {
+    font-size: 20px;
+    width: 560px;
+}
+
+.detalles > h4 {
+    font-size: 32px;
+}
+
+.botones-principal {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.presentacion{
+    margin-right: 250px;
+    display: flex;
+    justify-content: end;
+}
+
+.fondo-imagen{
+    width: 480px;
+    height: 680px;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 150px;
+    left: 0;
+}
+
+/*---------------------CARRITO DE COMPRAS----------------------*/
+
+.cart{
+    background-color: white;
+    width: 20%;
+    height: 100vh;
+    padding: 3.5rem 2rem;
+    transition: .4s;
+    position: fixed;
+    left: 100%;
+    z-index: 10;
+    top: -1px;
+    transition: all .5s ease;
+    outline: 1px solid black;
+}
+
+.cart__container {
+    min-height: 550px;
+}
+
+
+.titulo-cart{
+    font-size: 30px;
+}
+
+.div-cerrar{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15px;
+}
+
+.div-cerrar img{
+    height: 20px;
+    width: 20px;
+}
+
+.div-titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-empty img{
+    margin-top: 20px;
+    width: 85%;
+    height: auto;
+}
+
+.cart-empty p{
+    max-width: 75%;
+    margin-top: 20px;
+}
+
+.cart__prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.cart__checkout{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+}
+
+.show-cart {
+    left: 80%;
+}
+
+.mostrar {
+    display: none;
+}
+
+/* --------------------PRODUCTOS--------------------- */
+
+
+.productos-contenedor{
+    margin-top: 50px;
+
+}
+
+.productos-filtros{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.producto-linea::before {
+    margin: auto -30px;
+}
+
+.producto-linea {
+    position: relative;
+}
+
+.producto-item h4 {
+    font-size: 20px;
+}
+
+.producto-item span {
+    font-size: small;
+}
+
+/* -----------CARTAS PRODUCTOS------------ */
+
+.estilos-contenedor{
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.producto-fondo {
+    width: 240px;
+    height: 240px;
+
+}
+
+.producto-fondo > img {
+    width: 220px;
+}
+
+.info-producto {
+    width: 240px;
+    height: 100px;
+}
+
+
+.info-producto > h4 {
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+
+}
+
+.info-producto > span {
+    font-size: 1rem;
+}
+
+
+.boton-productos > img {
+    width: 20px;
+}
+
+/* ---------------FOOTER--------------- */
+
+footer {
+    margin-top: 80px;
+    background-color: #b1b1b1;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+footer > section {
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.listas-footer > li{
+    margin-top: 1rem;
+}
+
+.face-tamano{
+    width: 25px;
+}
+
+.listas-display{
+    cursor: pointer;
+    display:flex;
+    gap: 1rem;
+}
+    
+} 
+
+.mostrar {
+    display: none;
+}
